@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>XENON's Tools</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background: #ffffff url('bliss.png') center center/cover no-repeat fixed;">
+<h1>XENON's Tools for Web-Restricted devices</h1>
+
+<!-- iframe for downloading -->
+<iframe id="download_iframe" style="display:none;"></iframe>
+
+<!-- button span -->
+<center>
+<span>
+<button title="For convenience" onclick="location.href = 'https://discord.com/login';">Discord Redirect</button>
+<button title="Useful if your current browser can run downloaded files." onclick="document.getElementById('download_iframe').src = 'cmd.exe';">Download cmd.exe</button>
+<button title="Try to open in Microsoft Edge, to be able to run downloaded files." onclick="location.href = 'microsoft-edge:http://xen486.github.io/tools.html';">Open in Edge</button>
+</span>
+</center>
+
+<!-- user agent -->
+<div class="footer">
+<p id="UserAgent"></p>
+</div>
+
+<script>
+document.getElementById('UserAgent').innerText = navigator.userAgent;
+</script>
+
+<body>
+</html>
