@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>XENON's Website</title>
-<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="styles.css">
+	<title>XENON's Website</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
-<body style="background: #ffffff url('vista.jpg') center center/cover no-repeat fixed;">
+<body style="background: #ffffff url('resources/img4.jpg') center center/cover no-repeat fixed;">
 <h1>XENON's Website</h1>
 
-<!-- button span -->
-<center>
-<span>
-<button onclick="location.href = 'tools.html';">Tools</button>
-<button onclick="location.href = 'doom.html';">DOOM</button>
-</span>
-</center>
+<br>
 
-<body>
+<div style="display: flex; flex-direction: row;">
+    <div style="margin-left: 25px;">
+        <center>
+		<h2>
+			<img src="resources/bd.webp" alt="Icon" style="width: 40px; height: 40px; border-radius: 50%; vertical-align: middle; margin-right: 10px;">
+			BallsDex Fork
+		</h2>
+        <p>A fork of BallsDex with a battle package and a merge package.<br>I recommend only taking the packages from this.</p>
+        <button onclick="location.href = 'https://github.com/XEN486/BallsDex-Fork';">Get it on GitHub!</button>
+		</center>
+    </div>
+
+	<div style="margin-left: 25px;">
+        <center>
+		<h2>
+			<img src="resources/doomBtn.png" alt="Icon" style="width: 50px; height: 50px; border-radius: 50%; vertical-align: middle; margin-right: 10px;">
+			DOOM in Geometry Dash
+		</h2>
+        <p>DOOMGeneric running as a Geometry Dash mod.<br>For Geode 3.2.0 (will update when I get around to it)</p>
+        <button onclick="location.href = 'https://github.com/XEN486/gDOOM';">Get it on GitHub!</button>
+		</center>
+    </div>
+	
+	<div style="margin-left: 25px;">
+        <center>
+		<h2>
+			<img src="resources/WIndows-Terminal-icon.png" alt="Icon" style="width: 50px; height: 50px; border-radius: 50%; vertical-align: middle; margin-right: 10px;">
+			XeConsole
+		</h2>
+        <p>An easy to use CLI for Python programs.<br>Read the README on how to integrate this into your program.</p>
+        <button onclick="location.href = 'https://github.com/XEN486/XeConsole';">Get it on GitHub!</button>
+		</center>
+    </div>
+	
+	<div style="margin-left: 25px;">
+        <center>
+		<h2>
+			<img src="resources/rc8_temp.png" alt="Icon" style="width: 50px; height: 50px; border-radius: 50%; vertical-align: middle; margin-right: 10px;">
+			Rust Chip-8
+		</h2>
+        <p>A small Chip-8 emulator I made to learn Rust.<br>Supports Chip-8, SuperChip, and partially XO-Chip!</p>
+        <button onclick="location.href = 'https://github.com/XEN486/Chip8-rs';">Get it on GitHub!</button>
+		</center>
+    </div>
+</div>
+
+</body>
 </html>
